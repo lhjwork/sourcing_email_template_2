@@ -1,0 +1,68 @@
+<style>
+  /* Component-scoped footer styles to avoid depending on outer global selectors
+     or absolute positioning. These ensure the footer flows naturally when
+     injected as a fragment into the preview page. */
+  .footer {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 12px;
+    border-top: 1px solid #e0e0e0;
+    color: #888888;
+    background: transparent;
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: "Noto Sans CJK KR", "Noto Sans", Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+  }
+
+  .footer .informaiton,
+  .footer .announce {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer .element {
+    margin: 0 0 8px 0;
+    color: #888888;
+    /* ensure element is not absolutely positioned by global rules */
+    position: static !important;
+    width: auto !important;
+  }
+  .footer .div-3 {
+    margin: 0;
+    color: #888888;
+    position: static !important;
+    width: auto !important;
+  }
+  .footer a {
+    color: #888888;
+    text-decoration: underline;
+  }
+
+  /* Prevent any global .a .footer absolute rules from taking effect */
+  .a .footer {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+  }
+</style>
+
+<footer class="footer">
+  <div class="informaiton">
+    <p class="element">
+      <span class="text-wrapper">씨케이브릿지 주식회사 1588-4889</span>
+      <br />
+      <span class="span">대표: 홍성용 | 부산시 연제구 중앙대로 1138 중소기업중앙회 부산울산지역본부 2F | 사업자 등록번호: 714-88-00766<br />COPYRIGHT(C) sourcingroot.com. ALL RIGHT RESERVED.</span>
+    </p>
+  </div>
+  <div class="announce">
+    <p class="div-3">
+      <span class="text-wrapper-4">본 이메일은 기존 거래유지 등을 목적으로 고객님께서 소싱루트에 제공하신 이메일 주소로 발송되었습니다.<br />문의가 있으신 분은</span>
+      <span class="text-wrapper-6">&nbsp;</span>
+      <a href="https://www.sourcingroot.co.kr/cs-main" class="text-wrapper-5" target="_blank" rel="noopener noreferrer">고객센터</a>
+      <span class="text-wrapper-4">를 이용해 주시기 바랍니다.</span>
+    </p>
+  </div>
+</footer>

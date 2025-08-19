@@ -1,0 +1,71 @@
+<style>
+  /* Component-scoped footer styles to avoid depending on outer global selectors
+     or absolute positioning. These ensure the footer flows naturally when
+     injected as a fragment into the preview page. */
+  .footer {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 12px;
+    border-top: 1px solid #e0e0e0;
+    color: #888888;
+    background: transparent;
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: "Noto Sans CJK KR", "Noto Sans", Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+  }
+
+  .footer .informaiton,
+  .footer .announce {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer .element {
+    margin: 0 0 8px 0;
+    color: #888888;
+    /* ensure element is not absolutely positioned by global rules */
+    position: static !important;
+    width: auto !important;
+  }
+  .footer .div-3 {
+    margin: 0;
+    color: #888888;
+    position: static !important;
+    width: auto !important;
+  }
+  .footer a {
+    color: #888888;
+    text-decoration: underline;
+  }
+
+  /* Prevent any global .a .footer absolute rules from taking effect */
+  .a .footer {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+  }
+</style>
+
+<footer class="footer">
+  <div class="informaiton">
+    <p class="element">
+      <span class="text-wrapper">CKBRIDGE co.,ltd 1588-4889</span>
+      <br />
+      <span class="span"
+        >代表: Hong Sung Ryong | 釜山広域市連堤区中央大路1138(中小企業中央会釜山蔚山地域本部) 2F | 事業者登録番号: 714-88-00766 <br />COPYRIGHT(C) sourcingroot.com. ALL RIGHT RESERVED.</span
+      >
+    </p>
+  </div>
+  <div class="announce">
+    <p class="div-3">
+      <span class="text-wrapper-4">本メールは既存の取引維持などを目的にしてお客さまからご提供いただいたメールアドレスで発送しました。</span>
+      <span class="text-wrapper-6">&nbsp;</span>
+      <span class="text-wrapper-4"
+        >お問い合わせは[ <a href="https://www.sourcingroot.jp/cs-main" class="text-wrapper-5" target="_blank" rel="noopener noreferrer">ヘルプセンター </a>]までお願い致します。</span
+      >
+    </p>
+  </div>
+</footer>
