@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[SourcingRoot] 会員登録いただき、誠にありがとうございます!</title>
+    <title>[SourcingRoot]注文取消しの完了のご案内</title>
   </head>
   <body style="margin: 0; padding: 0; background: #ffffff; font-family: Arial, sans-serif">
     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #ffffff">
@@ -20,7 +20,7 @@
             <!-- Title -->
             <tr>
               <td align="center" style="padding-bottom: 20px">
-                <h1 style="margin: 0; font-size: 18px; font-weight: bold; color: #000000; text-align: center; font-family: Arial, sans-serif">#{name}様, ソーシングルートへようこそ！</h1>
+                <h1 style="margin: 0; font-size: 18px; font-weight: bold; color: #000000; text-align: center; font-family: Arial, sans-serif">ご注文が成功的に取消しました。</h1>
               </td>
             </tr>
 
@@ -28,10 +28,10 @@
             <tr>
               <td align="center" style="padding-bottom: 30px">
                 <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.5; font-family: Arial, sans-serif">
-                  <span style="font-weight: bold; color: #888888">世界の工場が集まるSourcingRoot</span
-                  ><span style="color: #888888"
-                    >に会員登録いただき、ありがとうございます。<br />
-                    お客様の会員情報が下記のようになります。</span
+                  <span style="color: #888888"
+                    >いつもSourcingRootをご利用いただき誠にありがとうございます。
+                    <br />
+                    #{name}様から要請した注文が<br />下記のように取消し完了をご案内します。</span
                   >
                 </p>
               </td>
@@ -43,26 +43,26 @@
                 <table width="400" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #e7e7e7">
                   <tr>
                     <td width="130" style="padding: 8px; background: #f1f1f1; border-bottom: 1px solid #e7e7e7; border-right: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">氏名</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">注文番号</p>
                     </td>
                     <td style="padding: 8px; border-bottom: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{name}</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{order_number}</p>
                     </td>
                   </tr>
                   <tr>
                     <td style="padding: 8px; background: #f1f1f1; border-bottom: 1px solid #e7e7e7; border-right: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">Email (ID)</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">商品名</p>
                     </td>
                     <td style="padding: 8px; border-bottom: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{email address}</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{product_name}</p>
                     </td>
                   </tr>
                   <tr>
                     <td style="padding: 8px; background: #f1f1f1; border-right: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">会社名</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">取消し日</p>
                     </td>
                     <td style="padding: 8px">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{company name}</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{date_cxl}</p>
                     </td>
                   </tr>
                 </table>
@@ -71,14 +71,20 @@
 
             <!-- Login Info -->
             <tr>
+              <td align="center" style="padding-bottom: 20px">
+                <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.5; font-family: Arial, sans-serif">
+                  <span style="color: #888888">
+                    当該注文は画面の右上の“会員アイコン&nbsp;&gt;&nbsp;MY注文&nbsp;&gt;&nbsp;
+                    <span style="color: #888888; text-decoration: underline; font-weight: bold">キャンセル履歴</span>’からご確認ください。</span
+                  >
+                </p>
+              </td>
+            </tr>
+
+            <tr>
               <td align="center" style="padding-bottom: 50px">
                 <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.5; font-family: Arial, sans-serif">
-                  <span style="color: #888888">詳細な情報は</span
-                  ><a href="https://www.sourcingroot.jp/login" target="_blank" style="color: #888888; text-decoration: underline; font-weight: bold">ログイン</a
-                  ><span style="color: #888888">
-                    の後、 画面の右上の“会員アイコン&nbsp;&gt;&nbsp;マイページ&nbsp;&gt;&nbsp;<span style="color: #888888; text-decoration: underline; font-weight: bold">会員情報'</span><br />
-                    メニューからご確認お願いします。</span
-                  >
+                  <span style="color: #888888">今後ともより信頼できるサービスで応えます。</span>
                 </p>
               </td>
             </tr>
