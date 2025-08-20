@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[소싱루트] 종합 물류비 결제 요청 안내</title>
+    <title>[SourcingRoot] 会員登録いただき、誠にありがとうございます!</title>
   </head>
   <body style="margin: 0; padding: 0; background: #ffffff; font-family: Arial, sans-serif">
     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #ffffff">
@@ -20,7 +20,7 @@
             <!-- Title -->
             <tr>
               <td align="center" style="padding-bottom: 20px">
-                <h1 style="margin: 0; font-size: 18px; font-weight: bold; color: #000000; text-align: center; font-family: Arial, sans-serif">종합 물류비 결제를 요청드립니다</h1>
+                <h1 style="margin: 0; font-size: 18px; font-weight: bold; color: #000000; text-align: center; font-family: Arial, sans-serif">#{name}様, ソーシングルートへようこそ！</h1>
               </td>
             </tr>
 
@@ -28,7 +28,11 @@
             <tr>
               <td align="center" style="padding-bottom: 30px">
                 <p style="margin: 0; font-size: 11px; color: #888888; text-align: center; line-height: 1.5; font-family: Arial, sans-serif">
-                  <span style="color: #888888">주문하신 건의 국제 배송을 위해 종합 물류비용 결제를 요청드립니다.<br />아래 내용을 확인하신 후, 결제를 진행해 주시기를 바랍니다.</span>
+                  <span style="font-weight: bold; color: #888888">世界の工場が集まるSourcingRoot</span
+                  ><span style="color: #888888"
+                    >に会員登録いただき、ありがとうございます。<br />
+                    お客様の会員情報が下記のようになります。</span
+                  >
                 </p>
               </td>
             </tr>
@@ -39,26 +43,26 @@
                 <table width="400" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #e7e7e7">
                   <tr>
                     <td width="130" style="padding: 8px; background: #f1f1f1; border-bottom: 1px solid #e7e7e7; border-right: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">주문번호</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">氏名</p>
                     </td>
                     <td style="padding: 8px; border-bottom: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{order_number}</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{name}</p>
                     </td>
                   </tr>
                   <tr>
                     <td style="padding: 8px; background: #f1f1f1; border-bottom: 1px solid #e7e7e7; border-right: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">상품명</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">Email (ID)</p>
                     </td>
                     <td style="padding: 8px; border-bottom: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{product_name}</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{email address}</p>
                     </td>
                   </tr>
                   <tr>
                     <td style="padding: 8px; background: #f1f1f1; border-right: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">결제금액</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">会社名</p>
                     </td>
                     <td style="padding: 8px">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{amount_requested}원</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{company name}</p>
                     </td>
                   </tr>
                 </table>
@@ -67,20 +71,14 @@
 
             <!-- Login Info -->
             <tr>
-              <td align="center" style="padding-bottom: 20px">
-                <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.5; font-family: Arial, sans-serif">
-                  <span style="color: #888888">
-                    결제는 화면 우측 상단의 ‘사용자 아이콘&nbsp;&gt;&nbsp;나의 주문&nbsp;&gt;&nbsp;
-                    <span style="color: #888888; text-decoration: underline; font-weight: bold">주문내역</span>’에서 <br />진행해주시길 바랍니다.</span
-                  >
-                </p>
-              </td>
-            </tr>
-
-            <tr>
               <td align="center" style="padding-bottom: 50px">
                 <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.5; font-family: Arial, sans-serif">
-                  <span style="color: #888888">결제 완료 후 국제 배송 절차가 신속하게 진행될 예정입니다.<br />소싱루트를 이용해 주셔서 감사합니다.</span>
+                  <span style="color: #888888">詳細な情報は</span
+                  ><a href="https://www.sourcingroot.jp/login" target="_blank" style="color: #888888; text-decoration: underline; font-weight: bold">ログイン</a
+                  ><span style="color: #888888">
+                    の後、 画面の右上の“会員アイコン&nbsp;&gt;&nbsp;マイページ&nbsp;&gt;&nbsp;<span style="color: #888888; text-decoration: underline; font-weight: bold">会員情報'</span><br />
+                    メニューからご確認お願いします。</span
+                  >
                 </p>
               </td>
             </tr>
@@ -92,9 +90,9 @@
                   <tr>
                     <td align="center" style="padding-bottom: 15px">
                       <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.4; font-family: Arial, sans-serif">
-                        <span style="font-weight: bold; color: #888888">씨케이브릿지 주식회사 1588-4889</span><br />
-                        <span style="color: #888888"
-                          >대표: 홍성용 | 부산시 연제구 중앙대로 1138 중소기업중앙회 부산울산지역본부 2F | 사업자 등록번호: 714-88-00766<br />
+                        <span style="font-weight: bold; color: #888888">CKBRIDGE co.,ltd 1588-4889</span><br />
+                        <span style="color: #888888">
+                          代表: Hong Sung Ryong | 釜山広域市連堤区中央大路1138(中小企業中央会釜山蔚山地域本部) 2F | 事業者登録番号: 714-88-00766<br />
                           COPYRIGHT(C) </span
                         ><span style="color: #888888; text-decoration: underline">info@ckbridge.com</span><span style="color: #888888">. ALL RIGHT RESERVED.</span>
                       </p>
@@ -104,10 +102,10 @@
                     <td align="center">
                       <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.4; font-family: Arial, sans-serif">
                         <span style="color: #888888"
-                          >본 이메일은 기존 거래유지 등을 목적으로 고객님께서 소싱루트에 제공하신 이메일 주소로 발송되었습니다.<br />
-                          문의가 있으신 분은 </span
-                        ><a href="https://www.sourcingroot.co.kr/cs-main" target="_blank" style="color: #888888; text-decoration: underline; font-weight: bold">고객센터</a
-                        ><span style="color: #888888">를 이용해 주시기를 바랍니다.</span>
+                          >本メールは既存の取引維持などを目的にしてお客さまからご提供いただいたメールアドレスで発送しました。<br />
+                          お問い合わせは </span
+                        ><a href="https://www.sourcingroot.jp/cs-main" target="_blank" style="color: #888888; text-decoration: underline; font-weight: bold"> ヘルプセンター</a
+                        ><span style="color: #888888">までお願い致します。</span>
                       </p>
                     </td>
                   </tr>
