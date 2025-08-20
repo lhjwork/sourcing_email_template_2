@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[SourcingRoot] OEM报价咨询接收通知=》OEM报价咨询确认通知</title>
+    <title>[SourcingRoot]注文のご請求要請のご案内</title>
   </head>
   <body style="margin: 0; padding: 0; background: #ffffff; font-family: Arial, sans-serif">
     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #ffffff">
@@ -20,7 +20,7 @@
             <!-- Title -->
             <tr>
               <td align="center" style="padding-bottom: 20px">
-                <h1 style="margin: 0; font-size: 18px; font-weight: bold; color: #000000; text-align: center; font-family: Arial, sans-serif">OEM报价咨询接收</h1>
+                <h1 style="margin: 0; font-size: 18px; font-weight: bold; color: #000000; text-align: center; font-family: Arial, sans-serif">商品のお支払いをお願い致します。</h1>
               </td>
             </tr>
 
@@ -28,10 +28,7 @@
             <tr>
               <td align="center" style="padding-bottom: 30px">
                 <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.5; font-family: Arial, sans-serif">
-                  <span style="color: #888888"
-                    >OEM 报价咨询已成功接收<br />
-                    请查看需求详情，并决定是否提交报价方案及是否确认接单
-                  </span>
+                  <span style="color: #888888">いつもSourcingRootをご利用いただき誠にありがとうございます。<br />#{name}様が注文した商品に対して下記のようにご請求いたします。</span>
                 </p>
               </td>
             </tr>
@@ -41,19 +38,35 @@
               <td align="center" style="padding-bottom: 30px">
                 <table width="400" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #e7e7e7">
                   <tr>
+                    <td width="130" style="padding: 8px; background: #f1f1f1; border-bottom: 1px solid #e7e7e7; border-right: 1px solid #e7e7e7">
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">注文番号</p>
+                    </td>
+                    <td style="padding: 8px; border-bottom: 1px solid #e7e7e7">
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{order_number}</p>
+                    </td>
+                  </tr>
+                  <tr>
                     <td style="padding: 8px; background: #f1f1f1; border-bottom: 1px solid #e7e7e7; border-right: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">咨询商品名称</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">商品名</p>
                     </td>
                     <td style="padding: 8px; border-bottom: 1px solid #e7e7e7">
                       <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{product_name}</p>
                     </td>
                   </tr>
                   <tr>
+                    <td style="padding: 8px; background: #f1f1f1; border-bottom: 1px solid #e7e7e7; border-right: 1px solid #e7e7e7">
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">注文日</p>
+                    </td>
+                    <td style="padding: 8px; border-bottom: 1px solid #e7e7e7">
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{order_date}</p>
+                    </td>
+                  </tr>
+                  <tr>
                     <td style="padding: 8px; background: #f1f1f1; border-right: 1px solid #e7e7e7">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">提交时间</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; font-family: Arial, sans-serif">支払金額</p>
                     </td>
                     <td style="padding: 8px">
-                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{inquiry_date}</p>
+                      <p style="margin: 0; font-size: 12px; color: #888888; text-align: left; font-family: Arial, sans-serif">#{amount_requested} 円</p>
                     </td>
                   </tr>
                 </table>
@@ -65,10 +78,8 @@
               <td align="center" style="padding-bottom: 20px">
                 <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.5; font-family: Arial, sans-serif">
                   <span style="color: #888888">
-                    请通过卖家管理网站内的<br />
-
-                    ‘订单/发货&nbsp;&gt;&nbsp;
-                    <span style="color: #888888; text-decoration: underline; font-weight: bold"> OEM咨询管理’</span>’菜单中查看详细信息</span
+                    支払いは画面の右上の“会員アイコン&nbsp;&gt;&nbsp;MY注文&nbsp;&gt;&nbsp;
+                    <span style="color: #888888; text-decoration: underline; font-weight: bold">注文履歴</span>’から進んでください。</span
                   >
                 </p>
               </td>
@@ -77,7 +88,7 @@
             <tr>
               <td align="center" style="padding-bottom: 50px">
                 <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.5; font-family: Arial, sans-serif">
-                  <span style="color: #888888">愿与买家畅达沟通，商祺共荣</span>
+                  <span style="color: #888888"> 支払い完了後、商品準備及び運送手続きが速やかに進む予定になります。</span>
                 </p>
               </td>
             </tr>
@@ -90,7 +101,9 @@
                     <td align="center" style="padding-bottom: 15px">
                       <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.4; font-family: Arial, sans-serif">
                         <span style="font-weight: bold; color: #888888">CKBRIDGE co.,ltd 1588-4889</span><br />
-                        <span style="color: #888888">CEO: Hong Sung Ryong | 釜山广域市莲堤区中央大路1138(中小企业中央会釜山蔚山地区本部) | 统一社会信用代码: 714-88-00766<br />COPYRIGHT(C) </span
+                        <span style="color: #888888">
+                          代表: Hong Sung Ryong | 釜山広域市連堤区中央大路1138(中小企業中央会釜山蔚山地域本部) 2F | 事業者登録番号: 714-88-00766<br />
+                          COPYRIGHT(C) </span
                         ><span style="color: #888888; text-decoration: underline">CK BRDIGE Inc</span><span style="color: #888888">. ALL RIGHT RESERVED.</span>
                       </p>
                     </td>
@@ -98,9 +111,11 @@
                   <tr>
                     <td align="center">
                       <p style="margin: 0; font-size: 12px; color: #888888; text-align: center; line-height: 1.4; font-family: Arial, sans-serif">
-                        <span style="color: #888888">本邮件已发送至您在SourcingRoot平台预留的邮箱地址，旨在维护现有业务合作及相关事宜<br />如您有任何疑问，欢迎通过平台</span
-                        ><a href="https://www.sourcingroot.co.kr/cs-main" target="_blank" style="color: #888888; text-decoration: underline; font-weight: bold">我的咨询</a
-                        ><span style="color: #888888">功能与我们联系</span>
+                        <span style="color: #888888"
+                          >本メールは既存の取引維持などを目的にしてお客さまからご提供いただいたメールアドレスで発送しました。<br />
+                          お問い合わせは </span
+                        ><a href="https://www.sourcingroot.jp/cs-main" target="_blank" style="color: #888888; text-decoration: underline; font-weight: bold"> ヘルプセンター</a
+                        ><span style="color: #888888">までお願い致します。</span>
                       </p>
                     </td>
                   </tr>
